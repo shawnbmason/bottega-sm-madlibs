@@ -24,8 +24,15 @@ body {
 .home {
     margin-top: 2rem;
     display: grid;
+
     justify-items: center;
-    background-color: rgba(207, 207, 207, 0.2)
+    // align-items: center;
+    grid-template-rows: [header-s] 218px [header-e card-s] 994px [card-e]
+    // background-color: rgba(207, 207, 207, 0.2)
+}
+
+.header {
+  align-self: center;
 }
 
 .card {
@@ -33,4 +40,32 @@ body {
   width: 1240px;
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2);
   border-radius: 7px;
+
+  display: grid;
+  grid-template-rows: 1fr 50px;
+}
+
+.card__inputs {
+  background-color: skyblue;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-items: center;
+  align-items: center;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: [number-start] 26px [number-end input-start] 1fr [input-end];
+
+  .input__title {
+    grid-column: input-start/input-end;
+  }
+  input {
+    grid-column: input-start/input-end;
+  }
+  .input__number {
+    grid-column: number-start/number-end;
+  }
 }
