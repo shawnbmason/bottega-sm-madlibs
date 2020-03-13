@@ -72,6 +72,9 @@ body {
 
 .header {
   align-self: center;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  text-align: center;
 }
 
 .header > .header__skew {
@@ -94,4 +97,19 @@ body {
   height: 150vh;
   width: 100vw;
   background-color: #00cb79;
+}
+
+h1 {
+  line-height: 44px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 25px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19px;
+  width: 403px;
 }
