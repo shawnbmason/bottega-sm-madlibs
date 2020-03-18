@@ -59,6 +59,34 @@ body {
     align-items: center;
     font-family: 'montserrat';
   }
+
+  button:focus {
+    outline: none;
+  }
+
+  button {
+    justify-self: center;
+  }
+
+    &__generate {
+      background-color: #00CB79;
+    }
+
+    &__clear {
+      background-color: #45B0E5;
+    }
+}
+
+button {
+  height: 50px;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+  color: white;
+  font-family: 'montserrat';
+  font-size: 22px;
+  text-align: center;
 }
 
 .input {
@@ -144,7 +172,13 @@ h1 {
   padding-bottom: 35px;
 }
 
-p {
+.card__content {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.header p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 15px;
   font-weight: 300;
