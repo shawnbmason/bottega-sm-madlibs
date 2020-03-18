@@ -11,6 +11,14 @@ html {
     font-family: 'montserrat';
 }
 
+.green {
+  background-color: #00CB79;
+}
+
+.grey {
+  background-color: #b3b3b3;
+}
+
 body {
     overflow-x: hidden;
     font-weight: normal;
@@ -147,7 +155,6 @@ button {
   &__number {
     grid-column: number-start/number-end;
 
-    background-color: #00CB79;
     padding-top: 4px;
     color: white;
     font-size: 18px;
@@ -197,6 +204,20 @@ h1 {
   font-size: 15px;
   font-weight: 300;
   line-height: 19px;
+
+  &__label{
+    height: 18px;
+    width: 18px;
+    line-height: 22px;
+    background-color: black;
+    border-radius: 50%;
+
+    text-align: center;
+    color: white;
+
+    display: inline-block;
+    margin: 4px;
+  }
 }
 
 .header p {
